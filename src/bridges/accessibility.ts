@@ -8,7 +8,7 @@ const execFileAsync = promisify(execFile);
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SWIFT_HELPER_PATH = resolve(
     __dirname,
-    "../../swift-helper/.build/release/LogicAccessibility",
+    "../../LogicAccessibility.app/Contents/MacOS/LogicAccessibility",
 );
 
 const AX_TIMEOUT = 15_000;
