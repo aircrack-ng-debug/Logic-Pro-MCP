@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.build/
+*.js.map
+*.d.ts
+!src/types/*.d.ts
+.DS_Store
+swift-helper/.build/
+.agent/
+GEMINI.md

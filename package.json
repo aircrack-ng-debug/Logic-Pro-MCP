@@ -1,0 +1,37 @@
+{
+    "name": "logic-pro-mcp",
+    "version": "0.1.0",
+    "description": "MCP server for controlling Apple Logic Pro via AI",
+    "type": "module",
+    "main": "dist/index.js",
+    "bin": {
+        "logic-pro-mcp": "dist/index.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "build:swift": "cd swift-helper && swift build -c release",
+        "build:all": "npm run build && npm run build:swift",
+        "start": "node dist/index.js",
+        "dev": "tsc --watch",
+        "test": "node --test dist/**/*.test.js"
+    },
+    "keywords": [
+        "mcp",
+        "logic-pro",
+        "daw",
+        "music-production",
+        "ai"
+    ],
+    "license": "MIT",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.0.0",
+        "midi": "^2.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "typescript": "^5.4.0"
+    }
+}
